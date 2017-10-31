@@ -1,9 +1,18 @@
 package com.example.android.tourguide;
 
-/**
- * Created by demondrelivingston on 10/25/17.
- */
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class Food {
+public class Food extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_category);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new EventsFragment()).commit();
+
+    }
+
 
 }
