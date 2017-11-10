@@ -15,11 +15,12 @@
     <LinearLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="wrap_content"
+        android:minHeight="88dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/miwok"
+            android:id="@+id/object"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -37,7 +38,7 @@
             android:src="@android:drawable/ic_media_play" />
 
         <TextView
-            android:id="@+id/english"
+            android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

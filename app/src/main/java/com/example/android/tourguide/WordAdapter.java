@@ -23,6 +23,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
     public WordAdapter(@NonNull Activity context, @NonNull ArrayList<Word> words, int category_colors) {
         super(context, 0, words);
+        mColorResourceId = category_colors;
     }
 
     @NonNull
@@ -35,19 +36,21 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         Word currentWord = getItem(position);
 
-        TextView miwok = (TextView) listListView.findViewById(R.id.miwok);
+        TextView object = listListView.findViewById(R.id.object);
 
-        miwok.setText(currentWord.getmMiwokTranslation());
+        object.setText(currentWord.getObject());
 
-        TextView defaultLanguage = (TextView) listListView.findViewById(R.id.english);
+        TextView description = listListView.findViewById(R.id.description);
 
-        defaultLanguage.setText(currentWord.getmDefaultTranslation());
+        description.setText(currentWord.getDescription());
 
-        ImageView imageView = (ImageView) listListView.findViewById(R.id.image);
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+
+        ImageView imageView = listListView.findViewById(R.id.image);
         // Set the theme color for the list item
         View textContainer = listListView.findViewById(R.id.text_container);
         // Find the color that the resource ID maps to
-        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        // int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
         if (currentWord.hasImage()) {

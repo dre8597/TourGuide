@@ -1,6 +1,24 @@
 <resources>
-    <string name="app_name">TourGuide</string>
+    <string name="app_name">Myrtle Beach</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_events">Events</string>
+    <string name="category_history">History</string>
+    <string name="category_food">Food</string>
+    <string name="categpry_misc">Misc</string>
+    <string name="christmas">Dickens Christmas Show and Festival</string>
+    <string name="medieval"><![CDATA[Mythical & Medieval]]></string>
+    <string name="landing">Lighting of the Landing</string>
+    <string name="thanksgiving">Thanksgiving Celebration</string>
+    <string name="fireworks">Firework Extravaganza</string>
+    <string name="sundunmb">Sun and Fun in beautiful Myrtle Beach</string>
+    <string name="race">The 25th Annuel Myrtle Beach 400\' Race (week 1)</string>
+    <string name="lights">Light Show</string>
+    <string name="christmasdate">November 11, 2017</string>
+    <string name="medieval_date">November 11-12, 2017</string>
+    <string name="landing_date">November 18, 2017</string>
+    <string name="thanksgiving_date">November 22-26, 2017</string>
+    <string name="firework_date">November 25, 2017</string>
+    <string name="sun_date">June 17-December 31, 2017</string>
+    <string name="race_date">November 9, 2017</string>
+    <string name="light_date">November 25, 2017</string>
 </resources>

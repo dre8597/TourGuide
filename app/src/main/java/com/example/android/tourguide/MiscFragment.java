@@ -25,25 +25,25 @@ public class MiscFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         // Create a list of words
-        final ArrayList<Word> colors = new ArrayList<Word>();
-        colors.add(new Word("red", "weṭeṭṭi", R.drawable.myrtlebeach));
-        colors.add(new Word("green", "chokokki", R.drawable.myrtlebeach));
-        colors.add(new Word("brown", " ṭakaakki", R.drawable.ic_launcher_background));
-        colors.add(new Word("gray", "ṭopoppi", R.drawable.ic_launcher_background));
-        colors.add(new Word("black", "kululli", R.drawable.ic_launcher_background));
-        colors.add(new Word("white", "kelelli", R.drawable.ic_launcher_background));
-        colors.add(new Word("dusty yellow", "ṭopiisә", R.drawable.ic_launcher_background));
-        colors.add(new Word("mustard yellow", "chiwiiṭә", R.drawable.ic_launcher_background));
+        final ArrayList<Word> misc = new ArrayList<Word>();
+        misc.add(new Word("red", "weṭeṭṭi", R.drawable.myrtlebeach));
+        misc.add(new Word("green", "chokokki", R.drawable.myrtlebeach));
+        misc.add(new Word("brown", " ṭakaakki", R.drawable.myrtlebeach));
+        misc.add(new Word("gray", "ṭopoppi", R.drawable.myrtlebeach));
+        misc.add(new Word("black", "kululli", R.drawable.myrtlebeach));
+        misc.add(new Word("white", "kelelli", R.drawable.myrtlebeach));
+        misc.add(new Word("dusty yellow", "ṭopiisә", R.drawable.myrtlebeach));
+        misc.add(new Word("mustard yellow", "chiwiiṭә", R.drawable.myrtlebeach));
+
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(getActivity(), colors, R.color.category_colors);
+        WordAdapter adapter = new WordAdapter(getActivity(), misc, R.color.category_misc);
 
-        // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // word_list.xml layout file.
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
@@ -57,7 +57,7 @@ public class MiscFragment extends Fragment {
                 // play a different sound file
 
                 // Get the {@link Word} object at the given position the user clicked on
-                Word word = colors.get(position);
+                Word word = misc.get(position);
 
             }
         });
