@@ -28,14 +28,14 @@ public class HistoryFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Word> history = new ArrayList<Word>();
-        history.add(new Word("Brookgreen Gardens", "Since1931, 9,100-acre garden/museum of native flora and fauna has over 1400 statues", R.drawable.myrtlebeach));
-        history.add(new Word("Atalaya Castle", "A Spanish/mediterranean coastal architecture", R.drawable.myrtlebeach));
-        history.add(new Word("Pavilion Nostalgia", "Ride the traditional rides from the former Pavilion site which was once on the ocean.", R.drawable.myrtlebeach));
-        history.add(new Word("Peaches Corner", "Since 1937, Get delicious hot dogs and beer, and feel the history! ", R.drawable.myrtlebeach));
-        history.add(new Word("Georgetown Front Street", "Take a trip to historic Georgetown, SC, since 1731 one of the oldest cities in the Carolinas", R.drawable.myrtlebeach));
-        history.add(new Word("Hopsewee Plantation", "The national Historic Landmark was once a rice plantation and this stately home in SC history before your very eyes", R.drawable.myrtlebeach));
-        history.add(new Word("Hobcaw Barony", "The beautiful 16,000-acre wildlife refuge was once part of 14 former plantation.", R.drawable.myrtlebeach));
-        history.add(new Word("Vereen Memorial Historical Gardens", "This 114-acre Horry County recreation park lies upon former plantation grounds.", R.drawable.myrtlebeach));
+        history.add(new Word(getString(R.string.brookgreen), getString(R.string.brookgreendate), R.mipmap.myrtlebeach));
+        history.add(new Word(getString(R.string.castle), getString(R.string.castledate), R.mipmap.myrtlebeach));
+        history.add(new Word(getString(R.string.pavilion), getString(R.string.paviliondate), R.mipmap.myrtlebeach));
+        history.add(new Word(getString(R.string.peaches), getString(R.string.peachesdate), R.mipmap.myrtlebeach));
+        history.add(new Word(getString(R.string.georgetown), getString(R.string.georgetowndate), R.mipmap.myrtlebeach));
+        history.add(new Word(getString(R.string.hopsewee), getString(R.string.hopseweedate), R.mipmap.myrtlebeach));
+        history.add(new Word(getString(R.string.hobcaw), getString(R.string.hobcawdate), R.mipmap.myrtlebeach));
+        history.add(new Word(getString(R.string.vereen), getString(R.string.vereendate), R.mipmap.myrtlebeach));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

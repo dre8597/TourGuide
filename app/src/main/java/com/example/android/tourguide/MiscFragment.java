@@ -27,14 +27,14 @@ public class MiscFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Word> misc = new ArrayList<Word>();
-        misc.add(new Word("Myrtle Beach is located in Horry County", "It's the largest county in all of South Carolina", R.drawable.myrtlebeach));
-        misc.add(new Word("Boiled Peanuts!!!", "This is the official state snack food offered roadside May through November", R.drawable.myrtlebeach));
-        misc.add(new Word("Hungry??", "There are over 1400 restaurants in the area serving up everything from seafood Calabash style to ethnic to local specialty. ", R.drawable.myrtlebeach));
-        misc.add(new Word("Need a place to stay?", "There are more than 425 hotels and 89,600 accommodation units for every taste and budget.", R.drawable.myrtlebeach));
-        misc.add(new Word("I LOVE WHEEL OF FORTUNE!!!", "Myrtle Beach is the birthplace of Wheel of Fortune hostess, Vanna White.", R.drawable.myrtlebeach));
-        misc.add(new Word("I bet you wish you invested !!", "Oceanfront lots in MB were $25 in 1905. If your lot was at least $500 you got a second one free", R.drawable.myrtlebeach));
-        misc.add(new Word("What came first ?", "The frist inhabitants were the Waccamaw and Winyah Indians.", R.drawable.myrtlebeach));
-        misc.add(new Word("So where did Myrtle Beach get it's name from anyway", "The area received its name from the Sweet Myrtle Tree native to the area. ", R.drawable.myrtlebeach));
+        misc.add(new Word(getString(R.string.mb), getString(R.string.mbdate), R.mipmap.myrtlebeach));
+        misc.add(new Word(getString(R.string.bp), getString(R.string.bpdate), R.mipmap.myrtlebeach));
+        misc.add(new Word(getString(R.string.hungry), getString(R.string.hungrydate), R.mipmap.myrtlebeach));
+        misc.add(new Word(getString(R.string.places), getString(R.string.placesdate), R.mipmap.myrtlebeach));
+        misc.add(new Word(getString(R.string.fortune), getString(R.string.fortunedate), R.mipmap.myrtlebeach));
+        misc.add(new Word(getString(R.string.invest), getString(R.string.investdate), R.mipmap.myrtlebeach));
+        misc.add(new Word(getString(R.string.first), getString(R.string.firstdate), R.mipmap.myrtlebeach));
+        misc.add(new Word(getString(R.string.myrtle), getString(R.string.myrtledate), R.mipmap.myrtlebeach));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

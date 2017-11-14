@@ -27,14 +27,14 @@ public class EventsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Word> event = new ArrayList<Word>();
-        event.add(new Word("Dickens Christmas Show and Festival", "November 11, 2017", R.drawable.myrtlebeach));
-        event.add(new Word("Mythical & Medieval", "November 11-12, 2017", R.drawable.myrtlebeach));
-        event.add(new Word("Lighting of the Landing", "November 18, 2017", R.drawable.myrtlebeach));
-        event.add(new Word("Thanksgiving Celebration", "November 22-26, 2017", R.drawable.myrtlebeach));
-        event.add(new Word("Firework Extravaganza", "November 25, 2017", R.drawable.myrtlebeach));
-        event.add(new Word("Sun and Fun in beautiful Myrtle Beach", "June 17-December 31, 2017", R.drawable.myrtlebeach));
-        event.add(new Word("The 25th Annuel Myrtle Beach 400' Race (week 1)", "November 9, 2017", R.drawable.myrtlebeach));
-        event.add(new Word("Light Show", "November 25, 2017", R.drawable.myrtlebeach));
+        event.add(new Word(getString(R.string.christmas), getString(R.string.christmasdate), R.mipmap.myrtlebeach));
+        event.add(new Word(getString(R.string.medieval), getString(R.string.medieval_date), R.mipmap.myrtlebeach));
+        event.add(new Word(getString(R.string.landing), getString(R.string.landing_date), R.mipmap.myrtlebeach));
+        event.add(new Word(getString(R.string.thanksgiving), getString(R.string.thanksgiving_date), R.mipmap.myrtlebeach));
+        event.add(new Word(getString(R.string.firework), getString(R.string.firework_date), R.mipmap.myrtlebeach));
+        event.add(new Word(getString(R.string.fun), getString(R.string.sun_date), R.mipmap.myrtlebeach));
+        event.add(new Word(getString(R.string.race), getString(R.string.race_date), R.mipmap.myrtlebeach));
+        event.add(new Word(getString(R.string.lights), getString(R.string.light_date), R.mipmap.myrtlebeach));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

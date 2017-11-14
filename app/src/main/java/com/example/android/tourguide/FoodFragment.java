@@ -27,14 +27,14 @@ public class FoodFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Word> food = new ArrayList<Word>();
-        food.add(new Word("The Melting Pot", "American, Contemporary, Vegetarian Friendly, Vegan options, and also Gluten Free options. ", R.drawable.myrtlebeach));
-        food.add(new Word("Pop Pop's Pit BBQ", "Americanm Barbecue, Mexican, Gluten Free Options", R.drawable.myrtlebeach));
-        food.add(new Word("Luigi's Trattoria", "Italian, Vegetarian Friendly, Vegan Options, Gluten Free Options", R.drawable.myrtlebeach));
-        food.add(new Word("Sole Italian Restaurant ", "Italian, Vegetarian Friendly, Gluten Free Options", R.drawable.myrtlebeach));
-        food.add(new Word("Simply Southern Smokehouse", "American, Barbecue, Vegetarian Friendly", R.drawable.myrtlebeach));
-        food.add(new Word("Pulaski Deli", "Polish, European, Eastern European, Central European, Vegetarian Friendly, Vegan Options, Gluten Free Options", R.drawable.myrtlebeach));
-        food.add(new Word("Santa Maria Restaurant", "American, Vegetarian Friendly, Vegan Options, Gluten Free Options", R.drawable.myrtlebeach));
-        food.add(new Word("Aspen Grille", "American, Seafood, Vegetarian Friendly, Vegan Options, Gluten Free Options", R.drawable.myrtlebeach));
+        food.add(new Word(getString(R.string.melting), getString(R.string.meltingdate), R.mipmap.myrtlebeach));
+        food.add(new Word(getString(R.string.bbq), getString(R.string.bbqdate), R.mipmap.myrtlebeach));
+        food.add(new Word(getString(R.string.luigi), getString(R.string.luigidate), R.mipmap.myrtlebeach));
+        food.add(new Word(getString(R.string.italian), getString(R.string.italiandate), R.mipmap.myrtlebeach));
+        food.add(new Word(getString(R.string.southern), getString(R.string.southerndate), R.mipmap.myrtlebeach));
+        food.add(new Word(getString(R.string.deli), getString(R.string.delidate), R.mipmap.myrtlebeach));
+        food.add(new Word(getString(R.string.maria), getString(R.string.mariadate), R.mipmap.myrtlebeach));
+        food.add(new Word(getString(R.string.aspen), getString(R.string.aspendate), R.mipmap.myrtlebeach));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
