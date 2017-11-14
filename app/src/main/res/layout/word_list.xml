@@ -4,7 +4,7 @@
     android:id="@+id/list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FD8E09"
+    android:background="#000000"
     android:minHeight="88dp"
     android:orientation="vertical"
     tools:context="com.example.android.tourguide.MainActivity" />

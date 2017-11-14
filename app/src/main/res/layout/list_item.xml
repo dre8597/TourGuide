@@ -16,14 +16,14 @@
         android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="88dp"
+        android:minHeight="90dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/object"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
             android:gravity="bottom"
             android:text="What's up"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -33,15 +33,15 @@
         <ImageView
             android:id="@+id/play"
             android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_height="19dp"
             android:paddingLeft="66dp"
             android:src="@android:drawable/ic_media_play" />
 
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
             android:gravity="top"
             android:text="how are you"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
